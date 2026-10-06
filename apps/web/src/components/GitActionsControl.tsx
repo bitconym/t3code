@@ -1938,8 +1938,8 @@ export default function GitActionsControl({
           <FileDiffIcon className={THREAD_DETAILS_PANEL_ICON_CLASS} aria-hidden />
           <span className="flex-1 text-left">Changes</span>
           <span className="flex items-center gap-1 font-mono text-2xs tabular-nums">
-            <span className="text-success">+{changesTotals?.insertions ?? 0}</span>
-            <span className="text-destructive">-{changesTotals?.deletions ?? 0}</span>
+            <span className="text-diff-addition">+{changesTotals?.insertions ?? 0}</span>
+            <span className="text-diff-deletion">-{changesTotals?.deletions ?? 0}</span>
           </span>
         </ThreadDetailsControl>
       ) : null}
